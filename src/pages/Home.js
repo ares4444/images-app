@@ -1,21 +1,14 @@
-import React from 'react'
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import MultiActionAreaCard from '../components/ImgCard';
+import React from 'react';
+import useFetch from '../useFetch';
 
 export default function Home() {
+  const  images = useFetch()
+
+  console.log({images})
+  
   return (
     <div>
-        <div className="App">
-      <Container sx={{marginY: 5}}>
-
-          <Grid container spacing={4}>
-            <MultiActionAreaCard/>
-          </Grid>
-        
-      </Container> 
-    </div>
+     <h1>Hello</h1>
     </div>
   )
 }

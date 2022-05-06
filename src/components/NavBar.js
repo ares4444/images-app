@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { useEffect, useState } from 'react'
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -10,7 +9,6 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import UploadButtons from './UploadButtons';
-// import axios from 'axios';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -55,43 +53,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function SearchAppBar() {
-    // const [data, setData] = useState(null);
-    // const [loading, setLoading] = useState(true);
-    // const [error, setError] = useState(null);
-    // const [inputText, setInputText] = useState('');
-
-    // const options = {
-    //     method: 'GET',
-    //     url: 'https://pexelsdimasv1.p.rapidapi.com/v1/search',
-    //     params: {query: 'ocean', locale: 'en-US', per_page: '15', page: '1'},
-    //     headers: {
-    //       Authorization: 'undefined',
-    //       'X-RapidAPI-Host': 'PexelsdimasV1.p.rapidapi.com',
-    //       'X-RapidAPI-Key': 'df9785e730msh0922b9a2e2168d3p19afc2jsn59ef3161dabf'
-    //     }
-    //   };
-  
-    //   function handleSearch() {
-    //       onSend(inputText);
-    //       setInputText('');
-    //   }
-
-    // useEffect(() => {
-    //     const handleClick = (event) => {
-    //      axios.request(options)
-    //     .then(response => {
-    //         setData(response.data)
-    //         setInputText(event.target.value);
-    //         console.log(response.data)
-    //     }).catch(error => {
-    //         console.log('Error fetching data: ', error)
-    //         setError(error)
-    //     }).finally(() => {
-    //         setLoading(false)
-    //     })   
-    //     }
-        
-    // }, [])
 
   return (
     <Box sx={{ flexGrow: 1 }}>
